@@ -1,0 +1,46 @@
+body {
+	background-color: #fff1e5
+}
+
+#main {
+	font-family: 'Martel', serif;
+	font-weight: bold;
+}
+
+.cat {
+	font-family: sans-serif;
+	color: gray;
+	font-weight: bold;
+}
+
+.details {
+	font-family: sans-serif;
+	color: gray;
+	font-weight: lighter;
+
+}
+
+.data {
+	font-family: Courier, monospace;
+	color: #002A2A;
+}
+
+h1 {
+	font-family: 'Martel', serif;
+	color: #044848;
+}
+
+h2 {
+	font-family: 'Martel', serif;
+	color: #044848;
+}
+
+h3 {
+	font-family: 'Martel', serif;
+	color: #044848;
+}
+
+p {
+	font-family: Helvetica, sans-serif;
+	color: #472000;
+}
