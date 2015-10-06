@@ -1,5 +1,3 @@
-var list1 = document.getElementById('list1');
-
 function CookieStand(shortName, fullName, minCustHour, maxCustHour, avgCookiesCust, manager) {
 	this.shortName = shortName;
 	this.fullName = fullName;
