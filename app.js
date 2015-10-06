@@ -23,6 +23,8 @@ var pikePlace = {
 			item.appendChild(document.createTextNode(this.hours[i] + ': ' + this.totalCookiesHour[i] + ' cookies'));
 			pikeList.appendChild(item);
 			this.totalValue += this.totalCookiesHour[i];
+			// console.log(this.location + ' ' + this.hours[i] + ': ' + this.totalCookiesHour[i]);
+			// console.log(this.location + ' Running Total: ' + this.totalValue)
 		};
 		var total = document.createElement('li');
 		total.appendChild(document.createTextNode('Total: ' + this.totalValue + ' cookies'));
@@ -33,7 +35,7 @@ var pikePlace = {
 };
 
 pikePlace.makeUL();
-console.log(pikePlace.totalCookiesHour);
+console.log('Pike Place cookies by hour values: ' + pikePlace.totalCookiesHour);
 
 var seaTac = {
 	location: 'SeaTac Airport',
@@ -64,7 +66,7 @@ var seaTac = {
 };
 
 seaTac.makeUL();
-console.log(seaTac.totalCookiesHour);
+console.log('SeaTac cookies by hour values: ' + seaTac.totalCookiesHour);
 
 var southCenter = {
 	location: 'Southcenter Mall',
@@ -95,7 +97,7 @@ var southCenter = {
 };
 
 southCenter.makeUL();
-console.log(southCenter.totalCookiesHour);
+console.log('Southcenter cookies by hour values: ' + southCenter.totalCookiesHour);
 
 var bellSquare = {
 	location: 'Bellevue Square',
@@ -126,7 +128,7 @@ var bellSquare = {
 };
 
 bellSquare.makeUL();
-console.log(bellSquare.totalCookiesHour);
+console.log('Bell Square cookies by hour values: ' + bellSquare.totalCookiesHour);
 
 var alki = {
 	location: 'Alki',
@@ -157,6 +159,6 @@ var alki = {
 };
 
 alki.makeUL();
-console.log(alki.totalCookiesHour);
+console.log('Alki cookies by hour values: ' + alki.totalCookiesHour);
 
 
