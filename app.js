@@ -16,7 +16,7 @@ var pikePlace = {
 		return Math.floor(Math.random() * (this.maxCustHour - this.minCustHour + 1)) + this.minCustHour;
 	},
 	makeUL: function() {
-		for(var i = 0; i < 8; i++) {
+		for(var i = 0; i < this.hours.length; i++) {
 			this.totalCookiesHour[i] = Math.floor(this.randCustHour() * this.avgCookiesCust);
 			var pikeList = document.getElementById('list1');
 			var item = document.createElement('li');
@@ -47,7 +47,7 @@ var seaTac = {
 		return Math.floor(Math.random() * (this.maxCustHour - this.minCustHour + 1)) + this.minCustHour;
 	},
 	makeUL: function() {
-		for(var i = 0; i < 8; i++) {
+		for(var i = 0; i < this.hours.length; i++) {
 			this.totalCookiesHour[i] = Math.floor(this.randCustHour() * this.avgCookiesCust);
 			var seaTacList = document.getElementById('list2');
 			var item = document.createElement('li');
@@ -78,7 +78,7 @@ var southCenter = {
 		return Math.floor(Math.random() * (this.maxCustHour - this.minCustHour + 1)) + this.minCustHour;
 	},
 	makeUL: function() {
-		for(var i = 0; i < 8; i++) {
+		for(var i = 0; i < this.hours.length; i++) {
 			this.totalCookiesHour[i] = Math.floor(this.randCustHour() * this.avgCookiesCust);
 			var southCenterList = document.getElementById('list3');
 			var item = document.createElement('li');
@@ -109,7 +109,7 @@ var bellSquare = {
 		return Math.floor(Math.random() * (this.maxCustHour - this.minCustHour + 1)) + this.minCustHour;
 	},
 	makeUL: function() {
-		for(var i = 0; i < 8; i++) {
+		for(var i = 0; i < this.hours.length; i++) {
 			this.totalCookiesHour[i] = Math.floor(this.randCustHour() * this.avgCookiesCust);
 			var bellSquareList = document.getElementById('list4');
 			var item = document.createElement('li');
@@ -140,7 +140,7 @@ var alki = {
 		return Math.floor(Math.random() * (this.maxCustHour - this.minCustHour + 1)) + this.minCustHour;
 	},
 	makeUL: function() {
-		for(var i = 0; i < 8; i++) {
+		for(var i = 0; i < this.hours.length; i++) {
 			this.totalCookiesHour[i] = Math.floor(this.randCustHour() * this.avgCookiesCust);
 			var alkiList = document.getElementById('list5');
 			var item = document.createElement('li');
