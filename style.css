@@ -1,23 +1,24 @@
 body {
-	background-color: #fff1e5
+	background-color: white;
+	margin-left: 80px;
 }
 
 #main {
 	font-family: 'Martel', serif;
 	font-weight: bold;
+	color: #00A4BA;
 }
 
 .cat {
-	font-family: sans-serif;
-	color: gray;
+	font-family: Avenir, sans-serif;
+	color: #727272;
 	font-weight: bold;
 }
 
 .details {
-	font-family: sans-serif;
-	color: gray;
+	font-family: Garamond, serif;
+	color: black;
 	font-weight: lighter;
-
 }
 
 .data {
@@ -26,21 +27,26 @@ body {
 }
 
 h1 {
-	font-family: 'Martel', serif;
-	color: #044848;
+	font-family: Avenir, sans-serif;
+	color: #FF8B31;
 }
 
 h2 {
-	font-family: 'Martel', serif;
-	color: #044848;
+	font-family: Avenir, sans-serif;
+	color: #FF8B31;
 }
 
 h3 {
-	font-family: 'Martel', serif;
-	color: #044848;
+	font-family: Avenir, sans-serif;
+	color: #FF8B31;
 }
 
 p {
 	font-family: Helvetica, sans-serif;
-	color: #472000;
+	color: #727272;
+}
+
+li {
+	font-family: Courier, monospace;
+	color: #002A2A;
 }
