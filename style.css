@@ -1,13 +1,99 @@
+/** {
+	border-style: dashed;
+	border-width: 1px;
+	border-color: gray;
+}*/
+
+header, section, footer, aside, nav, article, figure {
+  	display: block;
+}
+
 body {
+	background-color: #727272;
+}
+
+body.sales {
 	background-color: white;
-	margin-left: 80px;
+}
+
+#sales_page {
+	min-width: 720px;
+	max-width: 940px;
+	margin: 25px auto 25px auto;
+}
+
+#page {
+	min-width: 720px;
+	max-width: 940px;
+	margin: 25px auto 25px auto;
+}
+
+header {
+	height: 120px;
+	background-color: white;
+	margin: -30px 0px 10px 0px;
+	padding: 15px 0px 5px 10px;
+}
+
+section.content {
+	width: 630px;
+	float: left;
+	background-color: white;
+	padding-left: 30px;
+	padding-right: 15px;
+	padding-bottom: 80px;
+	margin-bottom: 10px;
+	height: 1000px;
+}
+
+aside {
+	float: right;
+	background-color: white;
+	height: 1060px;
+	width: 220px;
+	padding-left: 30px;
+	padding-top: 20px;
+
+}
+
+footer {
+	height: 60px;
+	background-color: white;	
+	clear: both;
+	margin-top: 300px;
+	padding: 10px 10px 10px 10px;
+}
+
+#header_pic {
+	width: 200px;
+	float: left;
+	margin: 10px 30px 10px auto;
+}
+
+article {
+	clear: both;
+	overflow: auto;
+	width: 100%;
+	margin-top: 20px;
 }
 
 #main {
 	font-family: 'Martel', serif;
 	font-weight: bold;
 	color: #00A4BA;
+	margin: 0px 0px -10px 0px;
 }
+
+img#history_pic {
+	width: 500px;
+	float: none;
+}
+
+img {
+	width: 175px;
+	float: left;
+	margin-right: 50px;
+}	
 
 .cat {
 	font-family: Avenir, sans-serif;
@@ -26,19 +112,14 @@ body {
 	color: #002A2A;
 }
 
-h1 {
+h1, h2, h3, h4 {
 	font-family: Avenir, sans-serif;
 	color: #FF8B31;
 }
 
-h2 {
-	font-family: Avenir, sans-serif;
-	color: #FF8B31;
-}
-
-h3 {
-	font-family: Avenir, sans-serif;
-	color: #FF8B31;
+section h4 {
+	color: black;
+	margin-bottom: -10px;
 }
 
 p {
@@ -47,6 +128,12 @@ p {
 }
 
 li {
-	font-family: Courier, monospace;
-	color: #002A2A;
+	font-family: Helvetica, sans-serif;
+	color: #727272;
+}
+
+p#footer_text {
+	text-align: right;
+	vertical-align: bottom;
+	line-height: 80px;
 }

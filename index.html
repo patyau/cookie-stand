@@ -1,4 +1,7 @@
+<!DOCTYPE html>
+
 <html>
+
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
@@ -6,31 +9,75 @@
 </head>
 
 <body>
-	<img src="img/salmon.png" width="400" />
-	<h1 id="main">Pat's Salmon Cookie Stands</h1>
+<div id="page">
+	<header>
+		<img id="header_pic" src="img/salmon.png" />
+		<h1 id="main">Seattle Salmon Cookies</h1>
+		<p id="slogan">World famous since 1984</p>
+	</header>
 
-	<h3>Pike Place Market</h3>
-	<ul class="data" id="list1">
-	</ul>
+	<!-- Start Main Body Section -->
+	<section class="content">
+		<article id="history">
+			<h2>History</h2>
+			<img id="history_pic" alt="family eating salmon cookies" title ="family eating salmon cookies" src="img/family.jpg">
+			<p>History of Pat's salmon cookie stand lorem ipsum lorem ipsum lorem ipsum.</p>
+			<p>Second paragraph of the history of Pat's salmon cookie stand lorem ipsum lorem ipsum lorem ipsum.</p>
+		</article>
 
-	<h3>SeaTac Airport</h3>
-	<ul class="data" id="list2">
-	</ul>
+		<article id="merch">
+			<h2>Merchandise</h2>
+			<img id="merch_pic" alt="salmon cookie t-shirt" title="salmon cookie t-shirt" src="img/shirt.jpg">
+			<p>Merchandise of Pat's salmon cookie stand lorem ipsum lorem ipsum lorem ipsum.</p>
+			<p><a href="" title="Buy a Seattle Salmon Cookie t-shirt" alt="Buy a Seattle Salmon Cookie t-shirt">Buy a Seattle Salmon Cookie t-shirt!</a>
+		</article>
 
-	<h3>Southcenter Mall</h3>
-	<ul class="data" id="list3">
-	</ul>
+		<article id="events">
+			<h2>Local salmon events!</h2>
+			<img id="events_pic" title="salmon" alt="picture of salmon" src="img/salmon-art.jpg">
+			<p>Check out these local events where you'll be able to find Seattle Salmon Cookies and much more! lorem ipsum lorem ipsum lorem ipsum.</p>
+			<ul id="list_events">
+				<li>Issaquah Salmon Days</li>
+				<li>Event 2</li>
+				<li>Event 3</li>
+			</ul>
+		</article>
+	</section>
+	<!-- End Main Body Section -->
 
-	<h3>Bellevue Square</h3>
-	<ul class="data" id="list4">
-	</ul>
+	<!-- Start sidebar -->
+	<aside>
+		<section class="locations">
+			<h4>Locations</h4>
+			<ul>
+				<li>Pike Place</li>
+				<li>Southcenter</li>
+				<li>Bellevue Square</li>
+				<li>Alki</li>
+				<li>SeaTac</li>
+			</ul>
+		</section>
 
-	<h3>Alki</h3>
-	<ul class="data" id="list5">
-	</ul>
+		<section class="hours">
+			<h4>Hours</h4>
+			<p>10am - 6pm<br />
+				seven days a week!</p>
+		</section>
 
+		<section class="contact">
+			<h4>Contact</h4>
+			<p>206 - 555 -2222<br />
+			<a href="mailto:">email@cookies.com</a></p>
+		</section>
+	</aside>
+	<!-- End sidebar -->
 
-	<script src="app.js"></script>
+	<footer>
+		<p id="footer_text">October, 2015</p>
+	</footer>
+</div>
+<script src="app.js"></script>
+
 </body>
 
 </html>
