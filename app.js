@@ -54,5 +54,33 @@ var southCenter = new CookieStand('Southcenter Mall', 11, 38, 1.9);
 var bellSquare = new CookieStand('Bellevue Square', 20, 48, 3.3);
 var alki = new CookieStand('Alki', 3, 24, 2.6);
 
+var storeSubmit = function(e) {
+	e.preventDefault();
+	var loc = document.getElementById('loc');
+	var minCust = document.getElementById('minCust');
+	var maxCust = document.getElementById('maxCust');
+	var avgCookies = document.getElementById('avgCookies');
 
+	if (!loc.value || !minCust.value || !maxCust.value || !avgCookies.value) {
+		alert('Please enter a value for all fields.');
+	} else if (isNaN(minCust.value) || isNaN(maxCust.value) || isNaN(avgCookies.value)) {
+		alert('Please enter number values for min/max cust and avg cookies fields.');
+	} else if (minCust.value > maxCust.value) {
+		alert('Please make sure the min cust field is a smaller number than the max cust field.')
+	} else {
+		var newStand = new CookieStand(loc.value, minCust.value, maxCust.value, avgCookies.value);
 
+		console.log(loc.value);
+		console.log(minCust.value);
+		console.log(maxCust.value);
+		console.log(avgCookies.value);
+
+		loc.value = '';
+		minCust.value = '';
+		maxCust.value = '';
+		avgCookies.value = '';
+	}
+};
+
+var addStore = document.getElementById('addStore');
+addStore.addEventListener('click', storeSubmit);

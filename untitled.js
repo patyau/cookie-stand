@@ -35,7 +35,13 @@ var CookieStand = function(standLoc, minCust, maxCust, avgCookiePerCust) {
     row.appendChild(document.createTextNode(loc));
     place.appendChild(row);
 
-   
+    //add random hourly numbers to table
+    for(var i = 0; i < array.length; i++) {
+        var hour = row;
+        var data = document.createElement('td');
+        data.appendChild(document.createTextNode(array[i]));
+        hour.appendChild(data);
+      };
     // Add total cookies to table
     var totalData = document.createElement('td');
     totalData.appendChild(document.createTextNode(total));
