@@ -1,11 +1,8 @@
-function CookieStand(shortName, fullName, minCustHour, maxCustHour, avgCookiesCust, manager) {
-	this.shortName = shortName;
-	this.fullName = fullName;
+function CookieStand(standLoc, minCustHour, maxCustHour, avgCookiesCust) {
+	this.standLoc = standLoc;
 	this.minCustHour = minCustHour;
 	this.maxCustHour = maxCustHour;
 	this.avgCookiesCust = avgCookiesCust;
-	this.manager = manager;
-
 	this.cookiesPerhour = [];
 	this.cookiesPerDay = 0;
 
@@ -31,12 +28,12 @@ function CookieStand(shortName, fullName, minCustHour, maxCustHour, avgCookiesCu
 
 	this.findCookiesPerDay();
 
-	function makeTable(fullName, cookiesPerhour, cookiesPerDay) {
+	function makeTable(standLoc, cookiesPerhour, cookiesPerDay) {
 		var table = document.getElementById('table');
 		var row = document.createElement('tr');
 		table.appendChild(row);
 		var tdLoc = document.createElement('td');
-		tdLoc.textContent = fullName;
+		tdLoc.textContent = standLoc;
 		row.appendChild(tdLoc);
 
 		for(var i = 0; i < cookiesPerhour.length; i++) {
@@ -48,26 +45,14 @@ function CookieStand(shortName, fullName, minCustHour, maxCustHour, avgCookiesCu
 		tdTotal.textContent = cookiesPerDay;
 		row.appendChild(tdTotal);
 	};
-	makeTable(this.fullName, this.cookiesPerhour, this.cookiesPerDay);
+	makeTable(this.standLoc, this.cookiesPerhour, this.cookiesPerDay);
 };
 
-var pike = new	CookieStand('pike', 'Pike Place Market', 17, 88, 5.2, 'Pat');
-var seaTac = new CookieStand('seatac', 'SeaTac Airport', 6, 44, 1.2, 'Russell');
-var southCenter = new CookieStand('southCenter', 'Southcenter Mall', 11, 38, 1.9, 'Henry');
-var bellSquare = new CookieStand('bell', 'Bellevue Square', 20, 48, 3.3, 'Daryl');
-var alki = new CookieStand('alki', 'Alki', 3, 24, 2.6, 'David');
-
-
-
-
-
-
-
-
-
-
-
-
+var pike = new	CookieStand('Pike Place Market', 17, 88, 5.2);
+var seaTac = new CookieStand('SeaTac Airport', 6, 44, 1.2);
+var southCenter = new CookieStand('Southcenter Mall', 11, 38, 1.9);
+var bellSquare = new CookieStand('Bellevue Square', 20, 48, 3.3);
+var alki = new CookieStand('Alki', 3, 24, 2.6);
 
 
 
