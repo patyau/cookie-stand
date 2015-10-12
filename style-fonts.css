@@ -1,0 +1,107 @@
+#main {
+	font-family: 'Martel', serif;
+	font-weight: bold;
+	color: white;
+	margin: 0px 0px -10px 0px;
+}
+
+h1#main {
+	color: white;
+	font-family: 'Martel', serif;
+}
+
+#slogan {
+	font-size: 12px;
+	color: white;
+	margin-top: 5px;
+	font-family: Helvetica, sans-serif;
+}
+
+.cat {
+	font-family: Avenir, sans-serif;
+	color: #727272;
+	font-weight: bold;
+}
+
+.details {
+	font-family: Garamond, serif;
+	color: black;
+	font-weight: lighter;
+}
+
+.data {
+	font-family: Courier, monospace;
+	color: #002A2A;
+}
+
+h1, h2, h3, h4 {
+	font-family: Avenir, sans-serif;
+	color: #FF8B31;
+}
+
+section h4 {
+	color: black;
+	margin-bottom: -10px;
+}
+
+.feature {
+	font-family: Helvetica, sans-serif;
+	color: #727272;
+	font-size: 16px;
+}
+
+p {
+	font-family: Helvetica, sans-serif;
+	color: #727272;
+	font-size: 14px;
+}
+
+article.second p {
+	font-family: Helvetica, sans-serif;
+	color: #727272;
+	font-size: 14px;
+}
+
+li {
+	font-family: Helvetica, sans-serif;
+	color: #727272;
+}
+
+#footer_text {
+	text-align: right;
+	vertical-align: bottom;
+	color: white;
+}
+
+table {
+	font-family: Courier, monospace;
+	color: #002A2A;
+	border-style: solid;
+}
+
+td {
+	width: 80px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #727272;
+}
+
+ul {
+	padding-left: 25px;
+	font-family: Helvetica, sans-serif;
+	color: #727272;
+	font-size: 14px;
+}
+
+ul.locations {
+	font-family: Helvetica, sans-serif;
+	color: #727272;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+span.locName {
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
