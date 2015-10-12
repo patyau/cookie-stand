@@ -1,27 +1,23 @@
-<!DOCTYPE html>
-
 <html>
-
 <head>
-	<title>Seattle Salmon Cookies Sales Site</title>
+	<title></title>
 	<link rel="stylesheet" type="text/css" href="style-2.css" />
 	<link rel="stylesheet" type="text/css" href="style-fonts.css" />
 	<link href='https://fonts.googleapis.com/css?family=Martel:400,600' rel='stylesheet' type='text/css' />
 </head>
 
-<body>
+<body class="sales">
 <div id="page">
+
 <header>
-	<a href="sales.html"><img id="header_pic" src="img/salmon.png" /></a>
+	<a href="index.html"><img id="header_pic" src="img/salmon.png" /></a>
 	<h1 id="main">Seattle Salmon Cookies</h1>
 	<p id="slogan">Voted #1 salmon cookie in the northwest!</p>
 </header>
 
-<!-- Start Main Body Section -->
 <div id="wrapper">
-<section id="internalContent">
-	<h1>Daily Sales Projections</h1>
-	<table id="table">
+<h1>Daily Sales Projections</h1>
+<table id="table">
 	<th>Location</th>
 	<th>10am</th>
 	<th>11am</th>
@@ -33,10 +29,10 @@
 	<th>5pm</th>
 	<th>Total</th>
 	</th>
-	</table>
+</table>
 
-	<h1>Enter new store location</h1>
-	<form id="sales-form">
+<h1>Enter new store location</h1>
+<form id="sales-form">
 	<p>
 	Location:
 	<input id="loc" type="text" name="loc" value=""></p>
@@ -51,8 +47,8 @@
 	<input id="avgCookies" type="text" name="avgCookies" value=""></p>
 	<p>
 	<button id="addStore" type="click" value="">Add Store</button></p>
-	</form>
-</section>
+</form>
+
 </div>
 
 <footer>
@@ -61,7 +57,7 @@
 	&copy; October, 2015</p>
 </footer>
 </div>
-<script src="app.js"></script>
-
+	<script src="app.js"></script>
 </body>
+
 </html>
